@@ -1,4 +1,4 @@
--- Teil 2
+-- Teil 2                                           Create Film tabelle
 /*
 CREATE SCHEMA if not exists filme;
 
@@ -33,9 +33,5 @@ FilmNr int,
 CONSTRAINT FK_FilmNr 
 FOREIGN KEY (FilmNr) REFERENCES film(FilmNr)
 );
-
--- SId in Tabelle erstellen und als Foreign key anlegen
-ALTER TABLE film ADD SId int;
-ALTER TABLE film ADD FOREIGN KEY (SId) REFERENCES Schauspieler(SId)
 
 
